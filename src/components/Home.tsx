@@ -5,6 +5,7 @@ import {
   HomeDiv,
   Spotlights,
   TitleDiv,
+  TitleNote,
 } from '../styles/HomeStyles';
 
 export const Home = () => (
@@ -16,10 +17,11 @@ export const Home = () => (
         DEV
       </H1>
       <Gradient />
-      {Spotlights.map((Spotlight, i) => (
-        <Spotlight key={i} />
+      {Spotlights.map((Spotlight, index) => (
+        <Spotlight key={index} />
       ))}
     </TitleDiv>
+    <TitleNote>To each, only that which they deserve.</TitleNote>
     <HomeNavigation />
   </HomeDiv>
 );

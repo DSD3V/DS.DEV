@@ -3,10 +3,10 @@ import { TABS } from '../tabs';
 
 export const HomeNavigation = () => (
   <HomeNavigationDiv>
-    {TABS.slice(1).map(tab => (
-      <StyledLink key={tab.title} to={tab.route}>
-        {tab.title}
-        <Gif src={tab.gifUrl} />
+    {TABS.slice(1).map(({ gifUrl, route, title }) => (
+      <StyledLink key={title} to={route}>
+        {title}
+        <Gif src={gifUrl} />
       </StyledLink>
     ))}
   </HomeNavigationDiv>

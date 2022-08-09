@@ -24,10 +24,10 @@ export const H1 = styled.h1`
   background-size: cover;
   color: transparent;
   filter: brightness(220%) contrast(110%);
-  font-size: 20vmax;
+  font-size: 22vmax;
   margin-top: 2%;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 3px rgb(0, 0, 89);
+  -webkit-text-stroke: 10px rgb(0, 0, 100);
   word-break: break-word;
 
   ::before,
@@ -42,7 +42,7 @@ export const H1 = styled.h1`
 
 export const HomeDiv = styled.div`
   margin: 12vh auto 3vh auto;
-  width: 90%;
+  width: 100%;
 `;
 
 export const HomeNavigationDiv = styled.div`
@@ -173,20 +173,27 @@ export const Spotlights = spotlightStyles.reduce(
 
 export const StyledLink = styled(Link)`
   align-items: center;
-  color: ${COLORS.BLUE};
+  color: ${COLORS.GREY};
   display: flex;
   flex-direction: column;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-decoration: none;
   transition: 0.4s;
   width: 250px;
 
   :hover {
-    color: ${COLORS.LIGHT_BLUE};
+    color: ${COLORS.LIGHT_GREY};
   }
 `;
 
 export const TitleDiv = styled.div`
   overflow: hidden;
   position: relative;
+`;
+
+export const TitleNote = styled.div`
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 35px 0 50px 0;
+  width: 100%;
 `;

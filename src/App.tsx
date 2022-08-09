@@ -8,14 +8,10 @@ export const App = () => (
   <Router>
     <Navbar />
     <Routes>
-      {TABS.map(tab => (
-        <Route
-          element={<tab.Component title={tab.title} />}
-          key={tab.title}
-          path={tab.route}
-        />
+      {TABS.map(({ Component, route, title }) => (
+        <Route element={<Component title={title} />} key={title} path={route} />
       ))}
-      <Route element={<PageNotFound />} path='*' />
+      <Route element={<PageNotFound />} path="*" />
     </Routes>
   </Router>
 );

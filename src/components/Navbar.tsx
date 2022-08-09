@@ -27,7 +27,7 @@ export const Navbar = () => {
   }, []);
 
   const toggleMenu = useCallback(() => {
-    setIsMenuOpen(prevIsMenuOpen => !prevIsMenuOpen);
+    setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   }, []);
 
   return (
@@ -46,14 +46,14 @@ export const Navbar = () => {
         <span />
       </Toggle>
       <NavbarLinksDiv $isMenuOpen={isMenuOpen} $numTabs={TABS.length - 1}>
-        {TABS.slice(1).map((tab, index) => (
+        {TABS.slice(1).map(({ route, title }, index) => (
           <NavbarLink
             $isCurrentTab={++index === currentTabIndex}
-            key={tab.title}
+            key={title}
             onClick={tabClicked}
-            to={tab.route}
+            to={route}
           >
-            {tab.title}
+            {title}
           </NavbarLink>
         ))}
       </NavbarLinksDiv>

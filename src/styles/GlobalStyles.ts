@@ -4,11 +4,12 @@ import { COLORS } from '../constants';
 
 export const CardContainer = styled.div`
   align-items: center;
-  border: 1px solid rgba(${COLORS.BLUE_RGB}, 0.4);
-  color: ${COLORS.BLUE};
+  border: 2px solid rgba(${COLORS.BLUE_RGB}, 0.4);
+  color: ${COLORS.GREY};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1%;
   width: 100%;
 `;
 
@@ -20,12 +21,13 @@ export const CardDiv = styled.span`
 
 export const CardImage = styled.img`
   height: 145px;
+  padding: 2px;
   width: 100%;
 `;
 
 export const CardLabel = styled.span`
-  color: ${COLORS.BLUE};
-  font-size: 1rem;
+  color: ${COLORS.LIGHT_GREY};
+  font-size: 1.15rem;
   overflow: hidden;
   padding: 3% 2%;
   width: 100%;
@@ -33,17 +35,17 @@ export const CardLabel = styled.span`
 
 export const CardText = styled.span`
   color: ${COLORS.GREY};
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   justify-self: flex-start;
   overflow: hidden;
   padding: 0 6% 4% 6%;
 `;
 
 export const CardTitle = styled.span`
-  color: ${COLORS.BLUE};
-  font-size: 1.4rem;
+  color: ${COLORS.LIGHT_GREY};
+  font-size: 1.7rem;
   overflow: hidden;
-  padding: 2% 4.5% 0% 4.5%;
+  padding: 3% 4.5% 2% 4.5%;
 `;
 
 export const Gif = styled.img`
@@ -52,26 +54,26 @@ export const Gif = styled.img`
 
 export const Link = styled.a`
   align-items: center;
-  color: ${COLORS.BLUE};
+  color: ${COLORS.LINK_BLUE};
   cursor: pointer;
   display: flex;
-  font-size: 0.9rem;
-  margin-bottom: 6%;
+  font-size: 1rem;
+  margin-bottom: 8px;
   overflow: hidden;
   text-decoration: none;
   transition: 0.4s;
 
   svg {
-    fill: ${COLORS.BLUE};
+    fill: ${COLORS.LINK_BLUE};
     padding-left: 3px;
     transition: 0.4s;
   }
 
   :hover {
-    color: ${COLORS.LIGHT_BLUE};
+    color: ${COLORS.LIGHT_LINK_BLUE};
 
     svg {
-      fill: ${COLORS.LIGHT_BLUE};
+      fill: ${COLORS.LIGHT_LINK_BLUE};
     }
   }
 `;
@@ -133,8 +135,8 @@ export const TabGrid = styled.div`
 `;
 
 export const TabTitle = styled.div`
-  color: ${COLORS.BLUE};
-  font-size: 1.9rem;
+  color: ${COLORS.LIGHT_GREY};
+  font-size: 2.4rem;
   padding: 1%;
 `;
 

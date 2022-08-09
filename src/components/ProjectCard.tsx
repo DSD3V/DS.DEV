@@ -42,16 +42,16 @@ export const ProjectCard = ({
         <OverlayContent>
           <OverlayLink
             href={projectUrl}
-            rel='noopener noreferrer'
-            target='_blank'
+            rel="noopener noreferrer"
+            target="_blank"
           >
             View Project
             <BiLinkExternal style={{ backgroundColor: 'transparent' }} />
           </OverlayLink>
           <OverlayLink
             href={githubUrl}
-            rel='noopener noreferrer'
-            target='_blank'
+            rel="noopener noreferrer"
+            target="_blank"
           >
             View Code on GitHub
             <BiLinkExternal style={{ backgroundColor: 'transparent' }} />
@@ -70,10 +70,10 @@ export const ProjectCard = ({
       <CardText>{features}</CardText>
     </CardDiv>
     <CardDiv>
-      <Link href={projectUrl} rel='noopener noreferrer' target='_blank'>
+      <Link href={projectUrl} rel="noopener noreferrer" target="_blank">
         View Project <BiLinkExternal />
       </Link>
-      <Link href={githubUrl} rel='noopener noreferrer' target='_blank'>
+      <Link href={githubUrl} rel="noopener noreferrer" target="_blank">
         View Code on GitHub <BiLinkExternal />
       </Link>
     </CardDiv>

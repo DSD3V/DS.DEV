@@ -8,7 +8,7 @@ export const ProjectCardImage = styled(CardImage)`
 
 export const ProjectsTabGrid = styled(TabGrid)`
   grid-auto-rows: minmax(500px, auto);
-  grid-template-columns: repeat(3, 0.33fr);
+  grid-template-columns: repeat(3, 0.32fr);
 
   @media (max-width: 1050px) {
     grid-template-columns: repeat(2, 0.49fr);

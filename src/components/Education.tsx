@@ -8,7 +8,7 @@ export const Education = ({ title }: { title: string }) => (
   <TabContainer>
     <TabHeader title={title} />
     <EducationTabGrid>
-      {educationData.map(educationInfo => (
+      {educationData.map((educationInfo) => (
         <EducationCard
           educationInfo={educationInfo}
           key={educationInfo.degree}

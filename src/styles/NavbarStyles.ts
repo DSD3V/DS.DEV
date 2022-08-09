@@ -5,7 +5,7 @@ import { COLORS, NAVBAR_TOGGLE_WIDTH } from '../constants';
 
 export const NavbarDiv = styled.nav<{ $isMenuOpen: boolean }>`
   align-items: center;
-  border-bottom: 1px solid rgba(${COLORS.BLUE_RGB}, 0.5);
+  border-bottom: 1px solid rgba(${COLORS.LIGHT_GREY_RGB}, 0.3);
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -37,12 +37,12 @@ export const NavbarLink = styled(Link)<{
 }>`
   border-bottom: ${({ $isCurrentTab }) =>
     $isCurrentTab
-      ? `1px solid rgba(${COLORS.LIGHT_BLUE_RGB}, 0.8)`
+      ? `1px solid rgba(${COLORS.LIGHT_GREY_RGB}, 0.5)`
       : '1px solid black'};
   border-top: 1px solid black;
   color: ${({ $isCurrentTab }) =>
-    $isCurrentTab ? COLORS.LIGHT_BLUE : COLORS.BLUE};
-  font-size: 1.03rem;
+    $isCurrentTab ? COLORS.LIGHT_GREY : COLORS.GREY};
+  font-size: 1.1rem;
   margin: 1rem 2rem;
   overflow: hidden;
   padding: 0px 2px 3px 2px;
@@ -50,7 +50,7 @@ export const NavbarLink = styled(Link)<{
   transition: 0.4s;
 
   :hover {
-    color: ${COLORS.LIGHT_BLUE};
+    color: ${COLORS.LIGHT_GREY};
   }
 
   @media (max-width: 850px) {
@@ -63,7 +63,7 @@ export const NavbarLink = styled(Link)<{
 `;
 
 export const HomeNavbarLink = styled(NavbarLink)`
-  font-size: 1.35rem;
+  font-size: 1.42rem;
   left: 0;
   margin: 1rem 1.7rem;
   position: fixed;
@@ -80,7 +80,7 @@ export const Toggle = styled.div`
   margin: 1rem 1rem 1rem 90%;
 
   span {
-    background-color: ${COLORS.BLUE};
+    background-color: ${COLORS.GREY};
     height: 2px;
     margin: 3px;
     transition: 0.4s;
@@ -89,7 +89,7 @@ export const Toggle = styled.div`
 
   :hover {
     span {
-      background-color: ${COLORS.LIGHT_BLUE};
+      background-color: ${COLORS.LIGHT_GREY};
     }
   }
 

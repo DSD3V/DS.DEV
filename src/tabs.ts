@@ -12,15 +12,9 @@ export const TABS = [
   },
   {
     Component: Projects,
-    gifUrl: 'https://media.giphy.com/media/cNwWYYKhg3rvYyWeUL/giphy.gif',
+    gifUrl: 'https://media.giphy.com/media/S8YnbSfHA2RiPLGkJg/giphy.gif',
     route: '/projects',
     title: 'Projects',
-  },
-  {
-    Component: WorkExperience,
-    gifUrl: 'https://media.giphy.com/media/S8YnbSfHA2RiPLGkJg/giphy.gif',
-    route: '/work-experience',
-    title: 'Work Experience',
   },
   {
     Component: Education,
@@ -29,8 +23,14 @@ export const TABS = [
     title: 'Education',
   },
   {
-    Component: Contact,
+    Component: WorkExperience,
     gifUrl: 'https://media.giphy.com/media/QA0TJwihHQnB3uIvrX/giphy.gif',
+    route: '/work-experience',
+    title: 'Work Experience',
+  },
+  {
+    Component: Contact,
+    gifUrl: 'https://media.giphy.com/media/cNwWYYKhg3rvYyWeUL/giphy.gif',
     route: '/contact',
     title: 'Contact',
   },

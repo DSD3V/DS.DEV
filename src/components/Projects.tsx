@@ -8,7 +8,7 @@ export const Projects = ({ title }: { title: string }) => (
   <TabContainer>
     <TabHeader title={title} />
     <ProjectsTabGrid>
-      {projectsData.map(project => (
+      {projectsData.map((project) => (
         <ProjectCard key={project.name} project={project} />
       ))}
     </ProjectsTabGrid>

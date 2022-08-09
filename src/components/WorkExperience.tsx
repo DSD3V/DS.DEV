@@ -8,11 +8,8 @@ export const WorkExperience = ({ title }: { title: string }) => (
   <TabContainer>
     <TabHeader title={title} />
     <WorkExperienceTabGrid>
-      {workExperienceData.map(experience => (
-        <WorkExperienceCard
-          experience={experience}
-          key={experience.companyName}
-        />
+      {workExperienceData.map((experience) => (
+        <WorkExperienceCard experience={experience} key={experience.summary} />
       ))}
     </WorkExperienceTabGrid>
   </TabContainer>

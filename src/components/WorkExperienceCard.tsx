@@ -44,8 +44,8 @@ export const WorkExperienceCard = ({
           <OverlayContent>
             <OverlayLink
               href={websiteUrl}
-              rel='noopener noreferrer'
-              target='_blank'
+              rel="noopener noreferrer"
+              target="_blank"
             >
               View Company Website
               <BiLinkExternal style={{ backgroundColor: 'transparent' }} />
@@ -63,7 +63,7 @@ export const WorkExperienceCard = ({
       <CardLabel>Technologies Used:</CardLabel>
       <CardText>{technologiesUsed}</CardText>
     </CardDiv>
-    <Link href={websiteUrl} rel='noopener noreferrer' target='_blank'>
+    <Link href={websiteUrl} rel="noopener noreferrer" target="_blank">
       View Company Website <BiLinkExternal />
     </Link>
   </CardContainer>

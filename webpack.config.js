@@ -11,16 +11,23 @@ module.exports = {
   module: {
     rules: [
       {
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+        },
+        test: /\.(jpeg|JPG)$/,
+      },
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.js$/,
         loader: 'source-map-loader',
+        test: /\.js$/,
       },
       {
-        test: /\.tsx?$/,
         loader: 'ts-loader',
+        test: /\.tsx?$/,
       },
     ],
   },
@@ -31,7 +38,7 @@ module.exports = {
   plugins: [
     new Dotenv(),
     new HtmlWebPackPlugin({
-      template: './public/index.html',
+      template: './dist/index.html',
     }),
   ],
   resolve: {

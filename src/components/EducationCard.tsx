@@ -4,13 +4,14 @@ import {
   CourseLi,
   CoursesUl,
   CourseworkDiv,
+  EducationCardText,
+  EducationCardSubtitle,
   EducationCardTopDiv,
 } from '../styles/EducationStyles';
 import {
   CardContainer,
   CardImage,
   CardLabel,
-  CardText,
   CardTitle,
   Link,
   OverlayContainer,
@@ -34,7 +35,7 @@ export const EducationCard = ({
     collegeName: string;
     dates: string;
     degree: string;
-    gpa: number | string;
+    gpa: string;
     imageUrl: string;
     relevantCoursework: string[];
     websiteUrl: string;
@@ -48,8 +49,8 @@ export const EducationCard = ({
           <OverlayContent>
             <OverlayLink
               href={websiteUrl}
-              rel='noopener noreferrer'
-              target='_blank'
+              rel="noopener noreferrer"
+              target="_blank"
             >
               View Program
               <BiLinkExternal style={{ backgroundColor: 'transparent' }} />
@@ -57,20 +58,20 @@ export const EducationCard = ({
           </OverlayContent>
         </OverlayDiv>
       </OverlayContainer>
-      <CardTitle>{collegeName}</CardTitle>
       <CardTitle>{degree}</CardTitle>
-      <CardLabel>{dates}</CardLabel>
-      <CardText>GPA: {gpa}</CardText>
+      <EducationCardSubtitle>{collegeName}</EducationCardSubtitle>
+      <EducationCardText>{dates}</EducationCardText>
+      <EducationCardText>GPA: {gpa}</EducationCardText>
       <CourseworkDiv>
         <CardLabel>Relevant Coursework:</CardLabel>
         <CoursesUl $numColumns={relevantCoursework.length > 10 ? 2 : 1}>
-          {relevantCoursework.map(course => (
+          {relevantCoursework.map((course) => (
             <CourseLi key={course}>{course}</CourseLi>
           ))}
         </CoursesUl>
       </CourseworkDiv>
     </EducationCardTopDiv>
-    <Link href={websiteUrl} rel='noopener noreferrer' target='_blank'>
+    <Link href={websiteUrl} rel="noopener noreferrer" target="_blank">
       View Program <BiLinkExternal />
     </Link>
   </CardContainer>
