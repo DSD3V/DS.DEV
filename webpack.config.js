@@ -5,6 +5,7 @@ const path = require('path');
 module.exports = {
   devServer: {
     historyApiFallback: true,
+    static: path.resolve(__dirname, 'dist'),
   },
   devtool: 'inline-source-map',
   entry: './src/index.tsx',
