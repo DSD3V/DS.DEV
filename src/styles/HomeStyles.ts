@@ -23,11 +23,11 @@ export const H1 = styled.h1`
   background-image: url(https://media.giphy.com/media/l2SpRgLNoSAWYBD0c/giphy.gif);
   background-size: cover;
   color: transparent;
-  filter: brightness(220%) contrast(110%);
+  filter: brightness(240%) contrast(110%);
   font-size: 22vmax;
   margin-top: 2%;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 10px rgb(0, 0, 100);
+  -webkit-text-stroke: 7px rgb(0, 0, 100);
   word-break: break-word;
 
   ::before,

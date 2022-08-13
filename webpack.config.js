@@ -1,5 +1,6 @@
 const Dotenv = require('dotenv-webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   devServer: {
@@ -7,7 +8,6 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   entry: './src/index.tsx',
-  mode: 'development',
   module: {
     rules: [
       {
@@ -33,12 +33,12 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    publicPath: '/',
+    path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
     new Dotenv(),
     new HtmlWebPackPlugin({
-      template: './dist/index.html',
+      template: './src/index.html',
     }),
   ],
   resolve: {
