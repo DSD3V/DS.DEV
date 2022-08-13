@@ -6,6 +6,7 @@ import { CardDiv, CardText, CardTitle, TabGrid } from './GlobalStyles';
 export const CourseLi = styled.li`
   break-inside: avoid;
   color: ${COLORS.GREY};
+  margin-right: 15px;
   overflow-x: visible;
   text-align: left;
   word-break: break-word;
@@ -20,7 +21,7 @@ export const CoursesUl = styled.ul<{
   list-style-position: outside;
   list-style-type: '- ';
   margin-top: 0.5%;
-  width: 91%;
+  width: 100%;
 
   @media (max-width: 628px) {
     columns: 1;
@@ -40,7 +41,6 @@ export const EducationCardSubtitle = styled(CardTitle)`
 
 export const EducationCardText = styled(CardText)`
   font-size: 1.05rem;
-  overflow: hidden;
   padding-bottom: 2%;
   width: 100%;
 `;
@@ -52,9 +52,9 @@ export const EducationCardTopDiv = styled(CardDiv)`
 
 export const EducationTabGrid = styled(TabGrid)`
   grid-auto-rows: minmax(650px, auto);
-  grid-template-columns: repeat(2, 0.48fr);
+  grid-template-columns: repeat(2, 0.47fr);
 
   @media (max-width: 1168px) {
-    grid-template-columns: repeat(1, 0.95fr);
+    grid-template-columns: repeat(1, 0.94fr);
   }
 `;

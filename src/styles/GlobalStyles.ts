@@ -49,7 +49,8 @@ export const CardTitle = styled.span`
 `;
 
 export const Gif = styled.img`
-  width: 15vmin;
+  margin-top: -2px;
+  width: 5.5rem;
 `;
 
 export const Link = styled.a`
@@ -124,7 +125,7 @@ export const OverlayLink = styled(Link)`
 export const TabContainer = styled.div`
   margin: 60px auto 50px auto;
   overflow: visible;
-  width: 80%;
+  width: 85%;
 `;
 
 export const TabGrid = styled.div`
@@ -136,7 +137,7 @@ export const TabGrid = styled.div`
 
 export const TabTitle = styled.div`
   color: ${COLORS.LIGHT_GREY};
-  font-size: 2.4rem;
+  font-size: 2rem;
   padding: 1%;
 `;
 
