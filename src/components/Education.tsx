@@ -1,10 +1,14 @@
-import educationData from '../data/education.json';
+import educationData from '../../data/education.json';
 import { EducationCard } from './EducationCard';
 import { EducationTabGrid } from '../styles/EducationStyles';
 import { TabContainer } from '../styles/GlobalStyles';
 import { TabHeader } from './TabHeader';
 
-export const Education = ({ title }: { title: string }) => (
+type EducationProps = {
+  title: string;
+}
+
+export const Education = ({ title }: EducationProps) => (
   <TabContainer>
     <TabHeader title={title} />
     <EducationTabGrid>

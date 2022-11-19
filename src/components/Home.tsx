@@ -5,7 +5,6 @@ import {
   HomeDiv,
   Spotlights,
   TitleDiv,
-  TitleNote,
 } from '../styles/HomeStyles';
 
 export const Home = () => (
@@ -21,7 +20,6 @@ export const Home = () => (
         <Spotlight key={index} />
       ))}
     </TitleDiv>
-    <TitleNote>To each, only that which they deserve.</TitleNote>
     <HomeNavigation />
   </HomeDiv>
 );

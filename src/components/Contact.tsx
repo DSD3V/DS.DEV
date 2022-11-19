@@ -1,16 +1,17 @@
-import contactData from '../data/contact.json';
+import contactData from '../../data/contact.json';
 import { TabContainer } from '../styles/GlobalStyles';
-import { ContactDiv, EmailDiv, EmailNote } from '../styles/ContactStyles';
+import { ContactDiv, EmailDiv } from '../styles/ContactStyles';
 import { TabHeader } from './TabHeader';
 
-export const Contact = ({ title }: { title: string }) => (
+type ContactProps = {
+  title: string;
+}
+
+export const Contact = ({ title }: ContactProps) => (
   <TabContainer>
     <TabHeader title={title} />
     <ContactDiv>
-      <EmailDiv>Email: {contactData.email}*</EmailDiv>
-      <EmailNote>
-        *Please do not contact me unless you have a good reason to.
-      </EmailNote>
+      <EmailDiv>Email: {contactData.email}</EmailDiv>
     </ContactDiv>
   </TabContainer>
 );

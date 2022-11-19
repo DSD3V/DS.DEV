@@ -12,10 +12,7 @@ export const CourseLi = styled.li`
   word-break: break-word;
 `;
 
-export const CoursesUl = styled.ul<{
-  $numColumns: number;
-}>`
-  columns: ${({ $numColumns }) => $numColumns};
+export const CoursesUl = styled.ul`
   font-size: 1.02rem;
   line-height: 22px;
   list-style-position: outside;
@@ -32,15 +29,16 @@ export const CoursesUl = styled.ul<{
 
 export const CourseworkDiv = styled(CardDiv)`
   margin-top: 1%;
+  width: 60%;
 `;
 
 export const EducationCardSubtitle = styled(CardTitle)`
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   margin: -2% 0 2% 0;
 `;
 
 export const EducationCardText = styled(CardText)`
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   padding-bottom: 2%;
   width: 100%;
 `;

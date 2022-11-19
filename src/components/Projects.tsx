@@ -1,10 +1,14 @@
-import projectsData from '../data/projects.json';
+import projectsData from '../../data/projects.json';
 import { ProjectCard } from './ProjectCard';
 import { TabContainer } from '../styles/GlobalStyles';
 import { ProjectsTabGrid } from '../styles/ProjectsStyles';
 import { TabHeader } from './TabHeader';
 
-export const Projects = ({ title }: { title: string }) => (
+type ProjectsProps = {
+  title: string;
+}
+
+export const Projects = ({ title }: ProjectsProps) => (
   <TabContainer>
     <TabHeader title={title} />
     <ProjectsTabGrid>

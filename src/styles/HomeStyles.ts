@@ -190,10 +190,3 @@ export const TitleDiv = styled.div`
   overflow: hidden;
   position: relative;
 `;
-
-export const TitleNote = styled.div`
-  font-size: 1.2rem;
-  margin: 0 auto;
-  padding: 35px 0 50px 0;
-  width: 100%;
-`;

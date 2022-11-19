@@ -7,7 +7,6 @@ import {
   CardLabel,
   CardText,
   CardTitle,
-  Link,
   OverlayContainer,
   OverlayContent,
   OverlayDiv,
@@ -15,6 +14,17 @@ import {
 } from '../styles/GlobalStyles';
 import { WorkExperienceCardTopDiv } from '../styles/WorkExperienceStyles';
 
+type WorkExperienceCardProps = {
+  experience: {
+    companyName: string;
+    dates: string;
+    imageUrl: string;
+    role: string;
+    summary: string;
+    technologiesUsed: string;
+    websiteUrl: string;
+  };
+}
 export const WorkExperienceCard = ({
   experience: {
     companyName,
@@ -25,17 +35,7 @@ export const WorkExperienceCard = ({
     technologiesUsed,
     websiteUrl,
   },
-}: {
-  experience: {
-    companyName: string;
-    dates: string;
-    imageUrl: string;
-    role: string;
-    summary: string;
-    technologiesUsed: string;
-    websiteUrl: string;
-  };
-}) => (
+}: WorkExperienceCardProps) => (
   <CardContainer>
     <WorkExperienceCardTopDiv>
       <OverlayContainer>
@@ -63,8 +63,5 @@ export const WorkExperienceCard = ({
       <CardLabel>Technologies Used:</CardLabel>
       <CardText>{technologiesUsed}</CardText>
     </CardDiv>
-    <Link href={websiteUrl} rel="noopener noreferrer" target="_blank">
-      View Company Website <BiLinkExternal />
-    </Link>
   </CardContainer>
 );

@@ -1,7 +1,11 @@
 import { Gif, TabTitle, TabTitleDiv } from '../styles/GlobalStyles';
 import { TabTitleToGifUrl } from '../tabs';
 
-export const TabHeader = ({ title }: { title: string }) => (
+type TabHeaderProps = {
+  title: string;
+}
+
+export const TabHeader = ({ title }: TabHeaderProps) => (
   <TabTitleDiv>
     <Gif src={TabTitleToGifUrl[title]} />
     <TabTitle>{title}</TabTitle>

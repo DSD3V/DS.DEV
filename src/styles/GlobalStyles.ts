@@ -27,7 +27,7 @@ export const CardImage = styled.img`
 
 export const CardLabel = styled.span`
   color: ${COLORS.LIGHT_GREY};
-  font-size: 1.15rem;
+  font-size: 1.14rem;
   overflow: hidden;
   padding: 3% 2%;
   width: 100%;

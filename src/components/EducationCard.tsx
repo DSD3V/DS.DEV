@@ -4,8 +4,8 @@ import {
   CourseLi,
   CoursesUl,
   CourseworkDiv,
-  EducationCardText,
   EducationCardSubtitle,
+  EducationCardText,
   EducationCardTopDiv,
 } from '../styles/EducationStyles';
 import {
@@ -13,12 +13,23 @@ import {
   CardImage,
   CardLabel,
   CardTitle,
-  Link,
   OverlayContainer,
   OverlayContent,
   OverlayDiv,
   OverlayLink,
 } from '../styles/GlobalStyles';
+
+type EducationCardProps = {
+  educationInfo: {
+    collegeName: string;
+    dates: string;
+    degree: string;
+    gpa: string;
+    imageUrl: string;
+    programUrl: string;
+    relevantCoursework: string[];
+  };
+}
 
 export const EducationCard = ({
   educationInfo: {
@@ -27,20 +38,10 @@ export const EducationCard = ({
     degree,
     gpa,
     imageUrl,
+    programUrl,
     relevantCoursework,
-    websiteUrl,
   },
-}: {
-  educationInfo: {
-    collegeName: string;
-    dates: string;
-    degree: string;
-    gpa: string;
-    imageUrl: string;
-    relevantCoursework: string[];
-    websiteUrl: string;
-  };
-}) => (
+}: EducationCardProps) => (
   <CardContainer>
     <EducationCardTopDiv>
       <OverlayContainer>
@@ -48,7 +49,7 @@ export const EducationCard = ({
         <OverlayDiv>
           <OverlayContent>
             <OverlayLink
-              href={websiteUrl}
+              href={programUrl}
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -64,15 +65,12 @@ export const EducationCard = ({
       <EducationCardText>GPA: {gpa}</EducationCardText>
       <CourseworkDiv>
         <CardLabel>Relevant Coursework:</CardLabel>
-        <CoursesUl $numColumns={relevantCoursework.length > 10 ? 2 : 1}>
+        <CoursesUl>
           {relevantCoursework.map((course) => (
             <CourseLi key={course}>{course}</CourseLi>
           ))}
         </CoursesUl>
       </CourseworkDiv>
     </EducationCardTopDiv>
-    <Link href={websiteUrl} rel="noopener noreferrer" target="_blank">
-      View Program <BiLinkExternal />
-    </Link>
   </CardContainer>
 );
