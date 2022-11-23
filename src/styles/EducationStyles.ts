@@ -6,8 +6,8 @@ import { CardDiv, CardText, CardTitle, TabGrid } from './GlobalStyles';
 export const CourseLi = styled.li`
   break-inside: avoid;
   color: ${COLORS.GREY};
-  margin-right: 15px;
   overflow-x: visible;
+  padding-right: 22px;
   text-align: left;
   word-break: break-word;
 `;
@@ -17,7 +17,7 @@ export const CoursesUl = styled.ul`
   line-height: 22px;
   list-style-position: outside;
   list-style-type: '- ';
-  margin-top: 0.5%;
+  margin: 0.5% auto;
   width: 100%;
 
   @media (max-width: 628px) {
@@ -28,8 +28,8 @@ export const CoursesUl = styled.ul`
 `;
 
 export const CourseworkDiv = styled(CardDiv)`
-  margin-top: 1%;
-  width: 60%;
+  margin: 1%;
+  width: auto;
 `;
 
 export const EducationCardSubtitle = styled(CardTitle)`
@@ -43,7 +43,7 @@ export const EducationCardText = styled(CardText)`
   width: 100%;
 `;
 
-export const EducationCardTopDiv = styled(CardDiv)`
+export const EducationCardDiv = styled(CardDiv)`
   width: 100%;
   margin-bottom: 6%;
 `;

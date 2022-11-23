@@ -4,9 +4,9 @@ import {
   CourseLi,
   CoursesUl,
   CourseworkDiv,
+  EducationCardDiv,
   EducationCardSubtitle,
   EducationCardText,
-  EducationCardTopDiv,
 } from '../styles/EducationStyles';
 import {
   CardContainer,
@@ -43,7 +43,7 @@ export const EducationCard = ({
   },
 }: EducationCardProps) => (
   <CardContainer>
-    <EducationCardTopDiv>
+    <EducationCardDiv>
       <OverlayContainer>
         <CardImage src={imageUrl} />
         <OverlayDiv>
@@ -71,6 +71,6 @@ export const EducationCard = ({
           ))}
         </CoursesUl>
       </CourseworkDiv>
-    </EducationCardTopDiv>
+    </EducationCardDiv>
   </CardContainer>
 );
