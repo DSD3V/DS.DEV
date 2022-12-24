@@ -3,6 +3,7 @@ import { Education } from './components/Education';
 import { Home } from './components/Home';
 import { Projects } from './components/Projects';
 import { WorkExperience } from './components/WorkExperience';
+import { Writing } from './components/Writing';
 
 export const TABS = [
   {
@@ -11,22 +12,28 @@ export const TABS = [
     title: 'DS.DEV',
   },
   {
+    Component: Education,
+    gifUrl: 'https://media.giphy.com/media/QA0TJwihHQnB3uIvrX/giphy.gif',
+    route: '/education',
+    title: 'Education',
+  },
+  {
+    Component: WorkExperience,
+    gifUrl: 'https://media.giphy.com/media/TdQwrW1uw5Sv74QGvw/giphy.gif',
+    route: '/work-experience',
+    title: 'Work Experience',
+  },
+  {
     Component: Projects,
     gifUrl: 'https://media.giphy.com/media/S8YnbSfHA2RiPLGkJg/giphy.gif',
     route: '/projects',
     title: 'Projects',
   },
   {
-    Component: Education,
-    gifUrl: 'https://media.giphy.com/media/TdQwrW1uw5Sv74QGvw/giphy.gif',
-    route: '/education',
-    title: 'Education',
-  },
-  {
-    Component: WorkExperience,
-    gifUrl: 'https://media.giphy.com/media/QA0TJwihHQnB3uIvrX/giphy.gif',
-    route: '/work-experience',
-    title: 'Work Experience',
+    Component: Writing,
+    gifUrl: 'https://media.giphy.com/media/jEDrJSxCqpzQs7px4z/giphy.gif',
+    route: '/writing',
+    title: 'Writing',
   },
   {
     Component: Contact,

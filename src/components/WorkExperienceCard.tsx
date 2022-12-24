@@ -25,6 +25,7 @@ type WorkExperienceCardProps = {
     websiteUrl: string;
   };
 }
+
 export const WorkExperienceCard = ({
   experience: {
     companyName,
