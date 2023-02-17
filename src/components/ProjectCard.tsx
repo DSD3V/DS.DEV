@@ -22,7 +22,7 @@ type ProjectCardProps = {
     imageUrl: string;
     name: string;
     technologiesUsed: string;
-  };
+  }
 }
 
 export const ProjectCard = ({
@@ -33,7 +33,7 @@ export const ProjectCard = ({
     imageUrl,
     name,
     technologiesUsed,
-  },
+  }
 }: ProjectCardProps) => (
   <CardContainer>
     <OverlayContainer>

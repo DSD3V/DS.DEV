@@ -28,7 +28,7 @@ type EducationCardProps = {
     imageUrl: string;
     programUrl: string;
     relevantCoursework: string[];
-  };
+  }
 }
 
 export const EducationCard = ({
@@ -40,7 +40,7 @@ export const EducationCard = ({
     imageUrl,
     programUrl,
     relevantCoursework,
-  },
+  }
 }: EducationCardProps) => (
   <CardContainer>
     <EducationCardDiv>

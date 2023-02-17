@@ -5,15 +5,15 @@ import { TabHeader } from './TabHeader';
 import { WorkExperienceCard } from './WorkExperienceCard';
 
 type WorkExperienceProps = {
-  title: string
+  title: string;
 }
 
 export const WorkExperience = ({ title }: WorkExperienceProps) => (
   <TabContainer>
     <TabHeader title={title} />
     <WorkExperienceTabGrid>
-      {workExperienceData.map((experience) => (
-        <WorkExperienceCard experience={experience} key={experience.summary} />
+      {workExperienceData.map((workExperience) => (
+        <WorkExperienceCard workExperience={workExperience} key={workExperience.summary} />
       ))}
     </WorkExperienceTabGrid>
   </TabContainer>

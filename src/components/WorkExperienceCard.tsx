@@ -15,7 +15,7 @@ import {
 import { WorkExperienceCardTopDiv } from '../styles/WorkExperienceStyles';
 
 type WorkExperienceCardProps = {
-  experience: {
+  workExperience: {
     companyName: string;
     dates: string;
     imageUrl: string;
@@ -23,19 +23,19 @@ type WorkExperienceCardProps = {
     summary: string;
     technologiesUsed: string;
     websiteUrl: string;
-  };
+  }
 }
 
 export const WorkExperienceCard = ({
-  experience: {
+  workExperience: {
     companyName,
     dates,
     imageUrl,
     role,
     summary,
     technologiesUsed,
-    websiteUrl,
-  },
+    websiteUrl
+  }
 }: WorkExperienceCardProps) => (
   <CardContainer>
     <WorkExperienceCardTopDiv>
