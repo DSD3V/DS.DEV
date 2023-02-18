@@ -123,7 +123,7 @@ export const OverlayLink = styled(Link)`
 `;
 
 export const TabContainer = styled.div`
-  margin: 60px auto 50px auto;
+  margin: 60px auto;
   overflow: visible;
   width: 85%;
 `;

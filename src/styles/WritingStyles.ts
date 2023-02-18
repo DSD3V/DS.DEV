@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import { COLORS } from '../constants';
 import { CardContainer, CardTitle, Link, TabGrid } from '../styles/GlobalStyles';
 
 export const WritingCardContainer = styled(CardContainer)`
@@ -17,6 +18,34 @@ export const WritingDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     margin-top: 3%;
+`;
+
+export const WritingInspirationDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const WritingInspirationLabel = styled.span`
+  color: ${COLORS.LIGHT_GREY};
+  font-size: 1.3rem;
+  margin-top: 50px;
+  padding: 15px;
+`;
+
+export const WritingInspirationLi = styled.li`
+  color: ${COLORS.GREY};
+  padding: 5px;
+`;
+
+export const WritingInspirationOthersSpan = styled.span`
+    color: ${COLORS.LIGHT_GREY};
+    font-size: 1.02rem;
+    margin-top: 15px;
+`;
+
+export const WritingInspirationUl = styled.ul`
+  font-size: 1.1rem;
+  line-height: 22px;
 `;
 
 export const WritingTabGrid = styled(TabGrid)`
