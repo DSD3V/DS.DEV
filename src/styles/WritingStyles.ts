@@ -33,8 +33,10 @@ export const WritingInspirationLabel = styled.span`
 `;
 
 export const WritingInspirationLi = styled.li`
+  break-inside: avoid;
   color: ${COLORS.GREY};
   padding: 5px;
+  word-break: break-word;
 `;
 
 export const WritingInspirationOthersSpan = styled.span`
