@@ -5,7 +5,7 @@ import { CardContainer, CardTitle, Link, TabGrid } from '../styles/GlobalStyles'
 
 export const WritingCardContainer = styled(CardContainer)`
     justify-content: start;
-    padding-bottom: 10%;
+    padding-bottom: 7%;
 `;
 
 export const WritingCardTitle = styled(CardTitle)`
@@ -51,9 +51,9 @@ export const WritingInspirationUl = styled.ul`
 `;
 
 export const WritingTabGrid = styled(TabGrid)`
-    grid-auto-rows: minmax(450px, auto);
+    grid-auto-rows: minmax(400px, auto);
     grid-gap: 50px;
-    grid-template-columns: repeat(2, 0.48fr);
+    grid-template-columns: repeat(2, 0.44fr);
 
     @media (max-width: 870px) {
         grid-template-columns: repeat(1, 0.8fr);
@@ -61,6 +61,7 @@ export const WritingTabGrid = styled(TabGrid)`
 `;
 
 export const WrittenWorkLink = styled(Link)`
+    display: inline;
     font-size: 1.1rem;
     padding: 12px;
 `;
