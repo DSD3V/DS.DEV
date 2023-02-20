@@ -24,7 +24,6 @@ type EducationCardProps = {
     collegeName: string;
     dates: string;
     degree: string;
-    gpa: string;
     imageUrl: string;
     programUrl: string;
     relevantCoursework: string[];
@@ -36,7 +35,6 @@ export const EducationCard = ({
     collegeName,
     dates,
     degree,
-    gpa,
     imageUrl,
     programUrl,
     relevantCoursework,
@@ -62,7 +60,6 @@ export const EducationCard = ({
       <CardTitle>{degree}</CardTitle>
       <EducationCardSubtitle>{collegeName}</EducationCardSubtitle>
       <EducationCardText>{dates}</EducationCardText>
-      <EducationCardText>GPA: {gpa}</EducationCardText>
       <CourseworkDiv>
         <CardLabel>Relevant Coursework:</CardLabel>
         <CoursesUl>
