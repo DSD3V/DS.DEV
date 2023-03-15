@@ -17,6 +17,7 @@ export const CardDiv = styled.span`
   align-items: center;
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
 
 export const CardImage = styled.img`
@@ -30,7 +31,7 @@ export const CardLabel = styled.span`
   font-size: 1.14rem;
   overflow: hidden;
   padding: 3% 2%;
-  width: 100%;
+  width: 80%;
 `;
 
 export const CardText = styled.span`
