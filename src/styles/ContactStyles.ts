@@ -19,5 +19,5 @@ export const EmailDiv = styled.div`
 
 export const LinkedInLink = styled(Link)`
   font-size: 1.4rem;
-  padding-top: 14px;
+  padding-top: 22px;
 `
