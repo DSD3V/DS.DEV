@@ -9,7 +9,7 @@ export const TABS = [
   {
     Component: Home,
     route: '/',
-    title: 'DS.DEV',
+    title: 'DS',
   },
   {
     Component: Education,

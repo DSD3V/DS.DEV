@@ -9,7 +9,7 @@ export const Gif = styled.img`
 `;
 
 export const Gradient = styled.div`
-  background: ${COLORS.NAVY};
+  background: ${COLORS.GREY};
   bottom: 0;
   left: 0;
   mix-blend-mode: multiply;
@@ -20,19 +20,15 @@ export const Gradient = styled.div`
 `;
 
 export const H1 = styled.h1`
-  background-image: url(https://media.giphy.com/media/l2SpRgLNoSAWYBD0c/giphy.gif);
-  background-size: cover;
   color: transparent;
   filter: brightness(240%) contrast(110%);
-  font-size: 22vmax;
-  margin-top: 2%;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 7px rgb(0, 0, 100);
+  font-size: 32vmax;
+  -webkit-text-stroke: 4px rgba(${COLORS.WHITE_RGB}, 0.2);
   word-break: break-word;
 
   ::before,
   ::after {
-    color: white;
+    color: black;
     left: 0;
     mix-blend-mode: difference;
     pointer-events: none;
@@ -48,12 +44,17 @@ export const HomeDiv = styled.div`
 export const HomeNavigationDiv = styled.div`
   display: grid;
   grid-row-gap: 1.8em;
-  grid-template-columns: repeat(4, 0.1fr);
+  grid-template-columns: repeat(5, 0.1fr);
   justify-content: center;
   justify-items: center;
-  margin: 2.5% auto 0 auto;
+  margin: 0 auto;
 
-  @media (max-width: 1050px) {
+  @media (max-width: 1350px) {
+    grid-template-columns: repeat(3, 0.2fr);
+    width: 70%;
+  }
+
+  @media (max-width: 850px) {
     grid-template-columns: repeat(2, 0.1fr);
     width: 70%;
   }
@@ -154,9 +155,9 @@ export const Spotlights = spotlightStyles.reduce(
 
     const Spotlight = styled.div`
       animation: ${animation} ${time}s infinite linear alternate both;
-      background: radial-gradient(circle, ${COLORS.BLUE}, transparent 25%) 0 0 /
+      background: radial-gradient(circle, ${COLORS.WHITE}, transparent 25%) 0 0 /
           25% 25%,
-        radial-gradient(circle, ${COLORS.BLUE}, black 25%) 5% 5% / 12.5% 12.5%;
+        radial-gradient(circle, ${COLORS.WHITE}, black 25%) 5% 5% / 12.5% 12.5%;
       bottom: ${-1 * positionPercentage - 100}%;
       left: ${positionPercentage}%;
       mix-blend-mode: color-dodge;

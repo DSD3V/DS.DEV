@@ -11,9 +11,7 @@ export const Home = () => (
   <HomeDiv>
     <TitleDiv>
       <H1>
-        DS.
-        <wbr />
-        DEV
+        DS
       </H1>
       <Gradient />
       {Spotlights.map((Spotlight, index) => (

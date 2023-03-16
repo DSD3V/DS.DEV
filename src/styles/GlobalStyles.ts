@@ -4,12 +4,11 @@ import { COLORS } from '../constants';
 
 export const CardContainer = styled.div`
   align-items: center;
-  border: 2px solid rgba(${COLORS.BLUE_RGB}, 0.4);
+  border: 1px solid rgba(${COLORS.WHITE_RGB}, 0.2);
   color: ${COLORS.GREY};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1%;
   width: 100%;
 `;
 
