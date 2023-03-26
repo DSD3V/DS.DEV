@@ -64,7 +64,7 @@ export const EducationCard = ({
       <EducationCardText>{dates}</EducationCardText>
       <EducationCardText>GPA: {gpa}</EducationCardText>
       <CourseworkDiv>
-        <CardLabel>Relevant Coursework:</CardLabel>
+        <CardLabel>Courses:</CardLabel>
         <CoursesUl>
           {relevantCoursework.map((course) => (
             <CourseLi key={course}>{course}</CourseLi>
