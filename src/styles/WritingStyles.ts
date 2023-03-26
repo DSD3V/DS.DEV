@@ -5,7 +5,7 @@ import { CardContainer, CardTitle, Link, TabGrid } from '../styles/GlobalStyles'
 
 export const WritingCardContainer = styled(CardContainer)`
     justify-content: start;
-    padding-bottom: 7%;
+    padding-bottom: 4%;
 `;
 
 export const WritingCardTitle = styled(CardTitle)`

@@ -25,7 +25,7 @@ export const WritingCard = ({
     <WritingCardTitle>{type}</WritingCardTitle>
         <WritingDiv>
           {works.map(writtenWork =>
-            <WrittenWorkLink href={writtenWork.url} rel="noopener noreferrer" target="_blank">
+            <WrittenWorkLink href={writtenWork.url} key={writtenWork.title} rel="noopener noreferrer" target="_blank">
                 {writtenWork.title}
                 <WrittenWorkPageCount>
                   ({writtenWork.pageCount} {writtenWork.pageCount > 1 ? 'pages' : 'page'})

@@ -50,7 +50,7 @@ export const CardTitle = styled.span`
 
 export const Gif = styled.img`
   margin-top: -2px;
-  width: 5.5rem;
+  width: 60px;
 `;
 
 export const Link = styled.a`
@@ -138,7 +138,7 @@ export const TabGrid = styled.div`
 export const TabTitle = styled.div`
   color: ${COLORS.LIGHT_GREY};
   font-size: 2rem;
-  padding: 1%;
+  padding: 0.8%;
 `;
 
 export const TabTitleDiv = styled.div`

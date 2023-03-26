@@ -20,14 +20,14 @@ type WritingProps = {
       <TabHeader title={title} />
       <WritingTabGrid>
         {writingData.writing.map(writing =>
-          <WritingCard writing={writing} />
+          <WritingCard key={writing.type} writing={writing} />
         )}
       </WritingTabGrid>
       <WritingInspirationDiv>
         <WritingInspirationLabel>Sources of Inspiration for my Thinking:</WritingInspirationLabel>
         <WritingInspirationUl>
           {writingData.sourcesOfInspiration.map(sourceOfInspiration =>
-            <WritingInspirationLi>{sourceOfInspiration}</WritingInspirationLi>
+            <WritingInspirationLi key={sourceOfInspiration}>{sourceOfInspiration}</WritingInspirationLi>
           )}
         </WritingInspirationUl>
         <WritingInspirationOthersSpan>... and many others.</WritingInspirationOthersSpan>

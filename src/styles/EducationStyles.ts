@@ -18,7 +18,6 @@ export const CoursesUl = styled.ul`
   list-style-position: outside;
   list-style-type: '- ';
   margin: 0.5% auto;
-  width: 100%;
 
   @media (max-width: 628px) {
     columns: 1;
