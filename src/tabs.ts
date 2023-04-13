@@ -3,7 +3,6 @@ import { Education } from './components/Education';
 import { Home } from './components/Home';
 import { Projects } from './components/Projects';
 import { WorkExperience } from './components/WorkExperience';
-import { Writing } from './components/Writing';
 
 export const TABS = [
   {
@@ -28,12 +27,6 @@ export const TABS = [
     gifUrl: 'https://media.giphy.com/media/S8YnbSfHA2RiPLGkJg/giphy.gif',
     route: '/projects',
     title: 'Projects',
-  },
-  {
-    Component: Writing,
-    gifUrl: 'https://media.giphy.com/media/jEDrJSxCqpzQs7px4z/giphy.gif',
-    route: '/writing',
-    title: 'Writing',
   },
   {
     Component: Contact,
