@@ -8,7 +8,7 @@
 
 h1 {
   color: transparent;
-  font-size: 44vmax;
+  font-size: 48px;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   word-break: break-all;
 }
