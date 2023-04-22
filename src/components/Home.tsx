@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { HomeNavigation } from './HomeNavigation';
 import {
   Gradient,
@@ -23,8 +22,4 @@ export const Home = () => (
     <SubtitleDiv>Freelance Web Development Services</SubtitleDiv>
     <HomeNavigation />
   </HomeDiv>
-=======
-export const Home = () => (
-    <h1>DS</h1>
->>>>>>> 5051ed26926f4c8d4648e60caa482d01a2d4c7ab
 );

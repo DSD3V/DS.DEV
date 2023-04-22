@@ -1,14 +1,8 @@
 * {
   background-color: black;
-  color: white;
+  color: #a3a3a3;
   font-family: 'Roboto', sans-serif;
-  margin: 30px auto;
+  margin: 0;
+  overflow-x: hidden;
   text-align: center;
-}
-
-h1 {
-  color: transparent;
-  font-size: 48px;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
-  word-break: break-all;
 }
