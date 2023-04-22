@@ -45,7 +45,7 @@ export const ProjectCard = ({
             rel="noopener noreferrer"
             target="_blank"
           >
-            View on GitHub
+            View Project
             <BiLinkExternal style={{ backgroundColor: 'transparent' }} />
           </OverlayLink>
         </OverlayContent>

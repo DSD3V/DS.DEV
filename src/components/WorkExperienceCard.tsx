@@ -55,7 +55,7 @@ export const WorkExperienceCard = ({
         </OverlayDiv>
       </OverlayContainer>
       <CardTitle>
-        {role} at {companyName}
+        {role} {companyName === 'Upwork' ? 'on' : 'at'} {companyName}
       </CardTitle>
       <CardLabel>{dates}</CardLabel>
     </WorkExperienceCardTopDiv>

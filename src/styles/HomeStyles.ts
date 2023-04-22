@@ -23,6 +23,9 @@ export const H1 = styled.h1`
   color: transparent;
   filter: brightness(240%) contrast(110%);
   font-size: 32vmax;
+  margin-bottom: -4%;
+  margin-top: -1%;
+  padding-bottom: 15px;
   -webkit-text-stroke: 4px rgba(${COLORS.WHITE_RGB}, 0.2);
   word-break: break-word;
 
@@ -186,6 +189,11 @@ export const StyledLink = styled(Link)`
     color: ${COLORS.LIGHT_GREY};
   }
 `;
+
+export const SubtitleDiv = styled.div`
+  font-size: 1.4rem;
+  margin-bottom: 70px;
+`
 
 export const TitleDiv = styled.div`
   overflow: hidden;

@@ -2,7 +2,6 @@
 import styled from 'styled-components';
 
 import { COLORS } from '../constants';
-import { Link } from '../styles/GlobalStyles';
 
 export const ContactDiv = styled.div`
   align-items: center;
@@ -16,8 +15,3 @@ export const ContactDiv = styled.div`
 export const EmailDiv = styled.div`
   color: ${COLORS.LIGHT_GREY};
 `;
-
-export const LinkedInLink = styled(Link)`
-  font-size: 1.4rem;
-  padding-top: 22px;
-`
