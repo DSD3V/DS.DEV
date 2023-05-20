@@ -1,5 +1,5 @@
 # DS.DEV
 
-My freelance web development portfolio site.
+My portfolio site.
 
 https://ds.dev/
