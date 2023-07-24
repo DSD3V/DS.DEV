@@ -21,6 +21,7 @@ type ProjectCardProps = {
     githubUrl: string;
     imageUrl: string;
     name: string;
+    projectUrl: string;
     technologiesUsed: string;
   }
 }
@@ -32,6 +33,7 @@ export const ProjectCard = ({
     githubUrl,
     imageUrl,
     name,
+    projectUrl,
     technologiesUsed,
   }
 }: ProjectCardProps) => (
@@ -41,7 +43,7 @@ export const ProjectCard = ({
       <OverlayDiv>
         <OverlayContent>
           <OverlayLink
-            href={githubUrl}
+            href={projectUrl}
             rel="noopener noreferrer"
             target="_blank"
           >
