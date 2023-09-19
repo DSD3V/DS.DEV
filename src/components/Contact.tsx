@@ -17,8 +17,8 @@ export const Contact = ({ title }: ContactProps) => (
       <ContactLink href={contactData.linkedIn} rel="noopener noreferrer" target="_blank">
           LinkedIn <BiLinkExternal />
       </ContactLink>
-      <ContactLink href={contactData.twitter} rel="noopener noreferrer" target="_blank">
-          Twitter <BiLinkExternal />
+      <ContactLink href={contactData.x} rel="noopener noreferrer" target="_blank">
+          X <BiLinkExternal />
       </ContactLink>
     </ContactDiv>
   </TabContainer>
