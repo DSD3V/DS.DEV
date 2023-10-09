@@ -13,11 +13,6 @@ export const ContactDiv = styled.div`
   margin-top: 28px;
 `;
 
-export const ContactLink = styled(Link)`
-  font-size: 1.4rem;
-  padding-top: 7px;
-`;
-
 export const EmailDiv = styled.div`
   color: ${COLORS.LIGHT_GREY};
   padding-bottom: 12px;
