@@ -49,9 +49,13 @@ export const HomeNavigationDiv = styled.div`
   justify-items: center;
   margin: 0 auto;
 
+  @media (max-width: 1500px) {
+    grid-template-columns: repeat(4, 0.1fr);
+  }
+
   @media (max-width: 1350px) {
     grid-template-columns: repeat(3, 0.2fr);
-    width: 70%;
+    width: 80%;
   }
 
   @media (max-width: 850px) {

@@ -16,7 +16,7 @@ module.exports = {
         options: {
           name: '[name].[ext]',
         },
-        test: /\.(jpeg|JPG)$/,
+        test: /\.(jpe?g|JPG)$/,
       },
       {
         test: /\.css$/,
