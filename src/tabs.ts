@@ -1,4 +1,3 @@
-import { Art } from './components/Art';
 import { Contact } from './components/Contact';
 import { Education } from './components/Education';
 import { Home } from './components/Home';
@@ -28,12 +27,6 @@ export const TABS = [
     gifUrl: 'https://media.giphy.com/media/S8YnbSfHA2RiPLGkJg/giphy.gif',
     route: '/projects',
     title: 'Projects',
-  },
-  {
-    Component: Art,
-    gifUrl: 'https://media.giphy.com/media/jEDrJSxCqpzQs7px4z/giphy.gif',
-    route: '/art',
-    title: 'Art',
   },
   {
     Component: Contact,
