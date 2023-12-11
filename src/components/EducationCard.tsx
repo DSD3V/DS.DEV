@@ -1,9 +1,6 @@
 import { BiLinkExternal } from 'react-icons/bi';
 
 import {
-  CourseLi,
-  CoursesUl,
-  CourseworkDiv,
   EducationCardDiv,
   EducationCardSubtitle,
   EducationCardText,
@@ -11,7 +8,6 @@ import {
 import {
   CardContainer,
   CardImage,
-  CardLabel,
   CardTitle,
   OverlayContainer,
   OverlayContent,
@@ -27,7 +23,6 @@ type EducationCardProps = {
     gpa: string;
     imageUrl: string;
     programUrl: string;
-    relevantCoursework: string[];
   }
 }
 
@@ -39,7 +34,6 @@ export const EducationCard = ({
     gpa,
     imageUrl,
     programUrl,
-    relevantCoursework,
   }
 }: EducationCardProps) => (
   <CardContainer>
@@ -63,14 +57,6 @@ export const EducationCard = ({
       <EducationCardSubtitle>{collegeName}</EducationCardSubtitle>
       <EducationCardText>{dates}</EducationCardText>
       <EducationCardText>GPA: {gpa}</EducationCardText>
-      <CourseworkDiv>
-        <CardLabel>Courses:</CardLabel>
-        <CoursesUl>
-          {relevantCoursework.map((course) => (
-            <CourseLi key={course}>{course}</CourseLi>
-          ))}
-        </CoursesUl>
-      </CourseworkDiv>
     </EducationCardDiv>
   </CardContainer>
 );
