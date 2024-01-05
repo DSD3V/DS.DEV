@@ -4,6 +4,7 @@ import {
   H1,
   HomeDiv,
   Spotlights,
+  SubTitle,
   TitleDiv,
 } from '../styles/HomeStyles';
 
@@ -18,6 +19,7 @@ export const Home = () => (
         <Spotlight key={index} />
       ))}
     </TitleDiv>
+    <SubTitle>Freelance Web Development Services</SubTitle>
     <HomeNavigation />
   </HomeDiv>
 );
