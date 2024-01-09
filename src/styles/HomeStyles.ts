@@ -191,12 +191,6 @@ export const StyledLink = styled(Link)`
   }
 `;
 
-export const SubTitle = styled.div`
-  color: ${COLORS.LIGHT_GREY};
-  font-size: 1.3rem;
-  margin-bottom 5%;
-`;
-
 export const TitleDiv = styled.div`
   overflow: hidden;
   position: relative;
